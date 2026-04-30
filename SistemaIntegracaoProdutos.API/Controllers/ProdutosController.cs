@@ -84,7 +84,7 @@ namespace SistemaIntegracaoProdutos.API.Controllers
         }
 
         /// <summary>
-        /// Atualiza os dados de um produto existente.
+        /// Atualiza os dados de um produto existente
         /// </summary>
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
