@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SistemaInterface.Models;
 
@@ -10,9 +11,11 @@ using SistemaInterface.Models;
 namespace SistemaInterface.Migrations
 {
     [DbContext(typeof(WpfDbContext))]
-    partial class WpfDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260430225203_AdicionarTabelaRelatorios")]
+    partial class AdicionarTabelaRelatorios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
